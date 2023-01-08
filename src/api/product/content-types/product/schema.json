@@ -56,6 +56,12 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "variation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variation.size",
+      "required": false
     }
   }
 }
