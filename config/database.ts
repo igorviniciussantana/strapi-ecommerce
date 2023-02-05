@@ -9,5 +9,8 @@ export default ({ env }) => ({
       password: env('DATABASE_PASSWORD', process.env.DB_PASSWORD),
       ssl: env.bool('DATABASE_SSL', false),
     },
+    pool: {
+      max: 3
+    }
   },
 });
